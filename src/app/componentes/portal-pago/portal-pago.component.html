@@ -1,0 +1,242 @@
+<div class="container mt-5">
+<!--titulo-->
+  <div class="row">
+    <div class="col-md-12 ">
+      <div class="row">
+        <a href="" class="col-md-3 card-izquierda p-3 pl-5" data-toggle="modal" data-target=".bd-example-modal-lg">
+          <p class="mb-0" style="font-weight: bold">Proveedor:
+            <span>jumbo</span>
+          </p>
+          <p style="font-weight: bold">Cliente:
+            <span>TerraCore SpA</span>
+          </p>
+        </a>
+        <div class="col-md-6 text-center p-3" style="border: 1px solid rgba(0, 0, 0, 0.125); background-color: white; ">
+          <h3 class="text-primary ">Portal de Pago</h3>
+          <label>{{ fechaActual | date :'fullDate' }}</label>
+        </div>
+        <div class="col-md-3 card-derecha text-center p-3">
+          <p class="mb-0">Total Pagar</p>
+          <p>CLP
+            <span style="font-weight: bold">$1.400.000</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fin titulo-->
+<!--facturas -->
+  <div class="row mt-5 col-xs-12 " >
+      <div class="col-md-4 w30 carta carta-tamaño ">
+          <p style="font-weight: bold">Facturas vencidas 1</p>
+          <div class="row mt-5">
+            <div class="col-md-8">
+              <p>CLP
+                <span style="font-weight: bold">400.000</span>
+              </p>
+            </div>
+            <div class="col-md-3 pr-2">
+              <button class=" btn btn-danger btn-radius" >
+                Pagar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 w30 carta carta-tamaño " style="margin: auto;">
+            <p style="font-weight: bold;">Facturas en curso 1</p>
+    
+            <div class="row mt-5">
+              <div class="col-md-8">
+                <p>CLP
+                  <span style="font-weight: bold">600.000</span>
+                </p>
+              </div>
+              <div class="col-md-3 pr-2">
+                <button class=" btn btn-warning btn-radius">
+                  Pagar
+                </button>
+              </div>
+        </div>
+      </div>
+      <div class="col-md-4 w30 carta  carta-tamaño ">
+          <p style="font-weight: bold">Facturas futuras 2</p>
+  
+          <div class="row mt-5">
+            <div class="col-md-8">
+              <p>CLP
+                <span style="font-weight: bold">400.000</span>
+              </p>
+            </div>
+            <div class="col-md-3 pr-2">
+              <button class=" btn btn-primary btn-radius">
+                Pagar
+              </button>
+            </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin facturas -->
+  <!--Grafico -->
+  <div class="row mt-5 carta ">
+    <div class="jumbotron">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus officiis voluptatum tenetur, ex tempora. Culpa, veritatis
+      tenetur. Magnam animi minus fugit distinctio iste illum quaerat tempore, voluptas fugiat eos?
+
+    </div>
+  </div>
+  <!--Fin Grafico -->
+  <!--Tabla -->
+  <div class="row mt-5 carta mb-5">
+    <div class="col-md-12">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-item nav-link active" id="nav-FacturasRecibidas-tab" data-toggle="tab" href="#nav-FacturasRecibidas" role="tab" aria-controls="nav-FacturasRecibidas"
+            aria-selected="true">Facturas recibidas</a>
+          <a class="nav-item nav-link" id="nav-FacturasVencidas-tab" data-toggle="tab" href="#nav-FacturasVencidas" role="tab" aria-controls="nav-FacturasVencidas"
+            aria-selected="false">Facturas vencidas</a>
+          <a class="nav-item nav-link" id="nav-FacturasCurso-tab" data-toggle="tab" href="#nav-FacturasCurso" role="tab" aria-controls="nav-FacturasCurso"
+            aria-selected="false">Facturas en curso</a>
+            <a class="nav-item nav-link" id="nav-Facturasfuturas-tab" data-toggle="tab" href="#nav-Facturasfuturas" role="tab" aria-controls="nav-Facturasfuturas"
+            aria-selected="false">Facturas futuras</a>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-FacturasRecibidas" role="tabpanel" aria-labelledby="nav-home-tab">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="tab-pane fade" id="nav-FacturasVencidas" role="tabpanel" aria-labelledby="nav-FacturasVencidas-tab">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="tab-pane fade" id="nav-FacturasCurso" role="tabpanel" aria-labelledby="nav-FacturasCurso-tab">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="tab-pane fade" id="nav-Facturasfuturas" role="tabpanel" aria-labelledby="nav-Facturasfuturas-tab">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+   <!-- Fin Tabla -->
+<!-- Modal Facturas vencidas -->
+   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        ...
+      </div>
+    </div>
+  </div>
+  <!-- Fin Modal Facturas vencidas -->
+</div>

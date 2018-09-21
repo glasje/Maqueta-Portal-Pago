@@ -1,0 +1,70 @@
+<div class="container mt-5">
+  <!--titulo-->
+  <div class="row carta">
+    <div class="col-md-8  p-3">
+      <h2 class="text-primary">Historial de Facturas</h2>
+      <p>Vizualizar y buscar las facturas emitidas por tu proveedor</p>
+    </div>
+    <div class="col-md-3 pt-4">
+      <div class="input-group m-3 ml-2">
+        <input type="text" class="form-control" placeholder="Buscar..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <span class="input-group-text " id="basic-addon2" style="background-color: #4a9eff;">
+            <i class="fa fa-search text-white" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- fin titulo-->
+<!-- Filtro-->
+<div class="row mt-4 carta p-3">
+    <div class="col-md-10">
+      <span class="text-black  mr-2">Filtrar por:</span>
+      <span class="text-black  mr-2">Prioridad </span>
+      <span class="text-black mr-2">Fecha <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+      <span class="text-black  mr-2">Estado <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+    </div>
+    
+    <div class="col-md-2 aling-right">
+        <span class="text-black mr-2">Vista</span>
+        <button  class="btn btn-primary mr-2" (click)="CambiarVista(true)">
+            <i class="fa fa-list" aria-hidden="true"></i>
+        </button>
+        <button  class="btn btn-primary" (click)="CambiarVista(false)">
+            <i class="fa fa-th" aria-hidden="true"></i>
+        </button>
+    </div>
+  </div>
+<!-- Fin Filtro-->
+<!-- Contenido-->
+<div *ngIf="VistaFacturas" class="row mt-4 carta " >
+  <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let item of items">
+        <tr>
+          <th scope="row">1</th>
+          <td>{{item.userId}}</td>
+          <td>{{item.title}}</td>
+          <td>{{item.body}}</td>
+        </tr>
+       
+      </tbody>
+    </table>
+</div>
+<div *ngIf="!VistaFacturas" class="row mt-4 carta ">
+  <div class="jumbotron">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error possimus officiis voluptatum tenetur, ex tempora. Culpa, veritatis
+    tenetur. Magnam animi minus fugit distinctio iste illum quaerat tempore, voluptas fugiat eos?
+
+  </div>
+</div>
+<!-- Fin Contenido-->
+</div>

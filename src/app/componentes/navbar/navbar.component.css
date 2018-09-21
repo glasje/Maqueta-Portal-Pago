@@ -1,0 +1,17 @@
+/* Fondo navbar*/
+.color{
+    background-color: #63bc71 !important;
+}
+
+.active a{
+    color: #2e71ad !important;
+}
+.nav-item a{
+    color: white;
+}
+.nav-item a:hover{
+    color: #2e71ad !important;
+}
+.active{
+    color: #2e71ad !important;
+}

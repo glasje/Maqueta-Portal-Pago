@@ -1,0 +1,46 @@
+.card-izquierda{
+    color: white;
+    background-color: #4a9eff;
+    border-radius: 5px 0px 0px 5px;
+}
+.card-derecha{
+    color: white;
+    background-color: #4a9eff;
+    border-radius: 0px 5px 5px 0px;
+}
+.card-izquierda span{
+    color: white;
+    text-decoration: underline;
+    font-weight: normal !important;
+}
+a{
+    text-decoration: none;
+}
+
+.carta-tamaño{
+    height: 135px !important;
+}
+
+.w30{
+    max-width: 32% !important;
+}
+
+.btn-radius{
+    border-radius: 16px;
+    padding: 2px 15px 3px 15px;
+    font-weight: bold;
+    color: white;
+}
+.nav-tabs a{
+    color: #6e6e6e;
+    width: 25%;
+    text-align: center;
+}
+.active{
+    color: #2e71ad !important;
+    border-bottom-color: #2e71ad !important;
+}
+
+table{
+    color: black !important;
+}
